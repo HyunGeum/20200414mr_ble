@@ -81,7 +81,8 @@ public class sts_main2 extends AppCompatActivity implements RadioGroup.OnChecked
     private int mode_text_on_color = Color.parseColor("#0080FF");
     private byte[] switch_state = new byte[8];
     private int switch_mode=0;
-
+    String pic[] = {"테스트1","테스트2","테스트3","테스트4",};
+    int selectedIndex;
 
 
     //셀렉트 되었을때 글씨 색
@@ -2000,42 +2001,18 @@ String dan= " %";
             builder.create();//만들고
 
 
-            builder.setPositiveButton("Modify", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-
-                    String strText = edittext.getText().toString();  //입력 받은거 저장
 
 
 
-                    Toast.makeText(getApplicationContext(), strText + "로 변경됨", Toast.LENGTH_LONG).show();
-
-                    dialog.dismiss();
-                }
-            });
 
 
-            builder.setNegativeButton("Cencel", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-
-                    dialog.dismiss();
-                }
-            });
-
-            builder.show(); //보여준다
 
 
             return true;
         }
-     /*   if (id == R.id.action_search) {
-            Toast.makeText(this, "검색 클릭", Toast.LENGTH_SHORT).show();
-            return true;
-        }
-        if (id == R.id.action_button2) {
-            Toast.makeText(this, "액션버튼 클릭", Toast.LENGTH_SHORT).show();
-            return true;
-        }*/
+
+
+        //구분
 
         return super.onOptionsItemSelected(item);
     }
