@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nordicsemi.nrfUARTv2.testpage">
+    <item
+        android:id="@+id/device_scan"
+        android:orderInCategory="100"
+        android:title="삭제"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/test"
+        android:title="설정" />
+    <item android:title="에너지 사용량" />
+    <item android:title="이름 변경" />
+    <item android:title="스케쥴 등록" />
+    <item android:title="센서 등록" />
+    <item android:title="위젯 등록" />
+    <item android:title="테스트(데이터넣기)" />
+    <item android:title="테스트(데이터삭제)" />
+</menu>

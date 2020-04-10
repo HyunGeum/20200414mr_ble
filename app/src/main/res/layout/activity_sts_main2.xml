@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".no_use"
+    android:background="@color/colorWHITE">
+
+    <LinearLayout
+        android:id="@+id/Lin_v1_1vvv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gra2"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:id="@+id/Lin_v2_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="193dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/office"
+
+
+                android:scaleType="fitCenter" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="10dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/img_temp" />
+
+                <TextView
+                    android:id="@+id/sensor_temper"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/temperature"
+                    android:textColor="#FFFFFF" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="10dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/img_hu" />
+
+                <TextView
+                    android:id="@+id/sensor_humidity"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/humidity"
+                    android:textColor="#FFFFFF" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="10dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/img_co" />
+
+                <TextView
+                    android:id="@+id/sensor_co2"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/co2"
+                    android:textColor="#FFFFFF" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="10dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/img_tvoc" />
+
+                <TextView
+                    android:id="@+id/sensor_tvoc"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tvoc"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="25dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/i_on_01" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/g_on_01" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/s_on_01" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/m_on_01" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Lin_v2_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:scrollbarStyle="insideInset">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/Lin_v3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/Lin_v4_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edittext1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+
+                            android:background="@drawable/edittext_rounded_corner_rectangle"
+                            android:text="edit1"
+                            android:textColor="#FFFFFF" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <SeekBar
+                                android:id="@+id/seekBar1"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:indeterminate="false"
+
+
+                                android:max="100"
+                                android:mirrorForRtl="false"
+                                android:progressDrawable="@drawable/seekbar_seekbar1"
+                                android:thumb="@drawable/seekbar_seekbar2_thumb" />
+
+                            <TextView
+                                android:id="@+id/seek_level1"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Switch
+                                android:id="@+id/switch1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:switchMinWidth="75dp"
+                                android:thumb="@drawable/switch_thumb_selector"
+                                android:track="@drawable/switch_track_selector" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Lin_v4_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edittext2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#FFFFFF"
+
+                            android:background="@drawable/edittext_rounded_corner_rectangle"
+                            android:text="edit1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <SeekBar
+                                android:id="@+id/seekBar2"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:indeterminate="false"
+
+
+                                android:max="100"
+                                android:mirrorForRtl="false"
+                                android:progressDrawable="@drawable/seekbar_seekbar1"
+                                android:thumb="@drawable/seekbar_seekbar2_thumb" />
+
+                            <TextView
+                                android:id="@+id/seek_level2"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Switch
+                                android:id="@+id/switch2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:switchMinWidth="75dp"
+                                android:thumb="@drawable/switch_thumb_selector"
+                                android:track="@drawable/switch_track_selector" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Lin_v4_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edittext3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#FFFFFF"
+
+                            android:background="@drawable/edittext_rounded_corner_rectangle"
+                            android:text="edit1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <SeekBar
+                                android:id="@+id/seekBar3"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:indeterminate="false"
+
+
+                                android:max="100"
+                                android:mirrorForRtl="false"
+                                android:progressDrawable="@drawable/seekbar_seekbar1"
+                                android:thumb="@drawable/seekbar_seekbar2_thumb" />
+
+                            <TextView
+                                android:id="@+id/seek_level3"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Switch
+                                android:id="@+id/switch3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:switchMinWidth="75dp"
+                                android:thumb="@drawable/switch_thumb_selector"
+                                android:track="@drawable/switch_track_selector" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Lin_v4_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edittext4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/edittext_rounded_corner_rectangle"
+                            android:text="edit1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <SeekBar
+                                android:id="@+id/seekBar01"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:indeterminate="false"
+
+
+                                android:max="100"
+                                android:mirrorForRtl="false"
+                                android:progressDrawable="@drawable/seekbar_seekbar1"
+                                android:thumb="@drawable/seekbar_seekbar2_thumb" />
+
+                            <TextView
+                                android:id="@+id/seek_level4"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Switch
+                                android:id="@+id/switch4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:switchMinWidth="75dp"
+                                android:thumb="@drawable/switch_thumb_selector"
+                                android:track="@drawable/switch_track_selector" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Lin_v4_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edittext5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#FFFFFF"
+
+                            android:background="@drawable/edittext_rounded_corner_rectangle"
+                            android:text="edit1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <SeekBar
+                                android:id="@+id/seekBar5"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:indeterminate="false"
+
+
+                                android:max="100"
+                                android:mirrorForRtl="false"
+                                android:progressDrawable="@drawable/seekbar_seekbar1"
+                                android:thumb="@drawable/seekbar_seekbar2_thumb" />
+
+                            <TextView
+                                android:id="@+id/seek_level5"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Switch
+                                android:id="@+id/switch5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:switchMinWidth="75dp"
+                                android:thumb="@drawable/switch_thumb_selector"
+                                android:track="@drawable/switch_track_selector" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Lin_v4_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edittext6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#FFFFFF"
+
+                            android:background="@drawable/edittext_rounded_corner_rectangle"
+                            android:text="edit1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <SeekBar
+                                android:id="@+id/seekBar6"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:indeterminate="false"
+
+
+                                android:max="100"
+                                android:mirrorForRtl="false"
+                                android:progressDrawable="@drawable/seekbar_seekbar1"
+                                android:thumb="@drawable/seekbar_seekbar2_thumb" />
+
+                            <TextView
+                                android:id="@+id/seek_level6"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Switch
+                                android:id="@+id/switch6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:switchMinWidth="75dp"
+                                android:thumb="@drawable/switch_thumb_selector"
+                                android:track="@drawable/switch_track_selector" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Lin_v4_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edittext7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#FFFFFF"
+
+                            android:background="@drawable/edittext_rounded_corner_rectangle"
+                            android:text="edit1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <SeekBar
+                                android:id="@+id/seekBar7"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:indeterminate="false"
+
+
+                                android:max="100"
+                                android:mirrorForRtl="false"
+                                android:progressDrawable="@drawable/seekbar_seekbar1"
+                                android:thumb="@drawable/seekbar_seekbar2_thumb" />
+
+                            <TextView
+                                android:id="@+id/seek_level7"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Switch
+                                android:id="@+id/switch7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:switchMinWidth="75dp"
+                                android:thumb="@drawable/switch_thumb_selector"
+                                android:track="@drawable/switch_track_selector" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Lin_v4_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edittext8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/edittext_rounded_corner_rectangle"
+                            android:text="edit1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <SeekBar
+                                android:id="@+id/seekBar8"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:indeterminate="false"
+
+
+                                android:max="100"
+                                android:mirrorForRtl="false"
+                                android:progressDrawable="@drawable/seekbar_seekbar1"
+                                android:thumb="@drawable/seekbar_seekbar2_thumb" />
+
+                            <TextView
+                                android:id="@+id/seek_level8"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Switch
+                                android:id="@+id/switch8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:switchMinWidth="75dp"
+                                android:thumb="@drawable/switch_thumb_selector"
+                                android:track="@drawable/switch_track_selector" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Lin_v4_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edittext9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/edittext_rounded_corner_rectangle"
+                            android:text="edit1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <SeekBar
+                                android:id="@+id/seekBar9"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:indeterminate="false"
+
+
+                                android:max="100"
+                                android:mirrorForRtl="false"
+                                android:progressDrawable="@drawable/seekbar_seekbar1"
+                                android:thumb="@drawable/seekbar_seekbar2_thumb" />
+
+                            <TextView
+                                android:id="@+id/seek_level9"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Switch
+                                android:id="@+id/switch9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:switchMinWidth="75dp"
+                                android:thumb="@drawable/switch_thumb_selector"
+                                android:track="@drawable/switch_track_selector" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Lin_v4_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edittext10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/edittext_rounded_corner_rectangle"
+                            android:text="edit1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <SeekBar
+                                android:id="@+id/seekBar10"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:indeterminate="false"
+
+
+                                android:max="100"
+                                android:mirrorForRtl="false"
+                                android:progressDrawable="@drawable/seekbar_seekbar1"
+                                android:thumb="@drawable/seekbar_seekbar2_thumb" />
+
+                            <TextView
+                                android:id="@+id/seek_level10"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Switch
+                                android:id="@+id/switch10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:switchMinWidth="75dp"
+                                android:thumb="@drawable/switch_thumb_selector"
+                                android:track="@drawable/switch_track_selector" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Lin_v4_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edittext11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/edittext_rounded_corner_rectangle"
+                            android:text="edit1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <SeekBar
+                                android:id="@+id/seekBar11"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:indeterminate="false"
+
+
+                                android:max="100"
+                                android:mirrorForRtl="false"
+                                android:progressDrawable="@drawable/seekbar_seekbar1"
+                                android:thumb="@drawable/seekbar_seekbar2_thumb" />
+
+                            <TextView
+                                android:id="@+id/seek_level11"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Switch
+                                android:id="@+id/switch11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:switchMinWidth="75dp"
+                                android:thumb="@drawable/switch_thumb_selector"
+                                android:track="@drawable/switch_track_selector" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Lin_v4_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edittext12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/edittext_rounded_corner_rectangle"
+                            android:text="edit1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <SeekBar
+                                android:id="@+id/seekBar12"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:indeterminate="false"
+
+
+                                android:max="100"
+                                android:mirrorForRtl="false"
+                                android:progressDrawable="@drawable/seekbar_seekbar1"
+                                android:thumb="@drawable/seekbar_seekbar2_thumb" />
+
+                            <TextView
+                                android:id="@+id/seek_level12"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Switch
+                                android:id="@+id/switch12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:switchMinWidth="75dp"
+                                android:thumb="@drawable/switch_thumb_selector"
+                                android:track="@drawable/switch_track_selector" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Lin_v4_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edittext13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#FFFFFF"
+
+                            android:background="@drawable/edittext_rounded_corner_rectangle"
+                            android:text="edit1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <SeekBar
+                                android:id="@+id/seekBar13"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:indeterminate="false"
+
+
+                                android:max="100"
+                                android:mirrorForRtl="false"
+                                android:progressDrawable="@drawable/seekbar_seekbar1"
+                                android:thumb="@drawable/seekbar_seekbar2_thumb" />
+
+                            <TextView
+                                android:id="@+id/seek_level13"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Switch
+                                android:id="@+id/switch13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:switchMinWidth="75dp"
+                                android:thumb="@drawable/switch_thumb_selector"
+                                android:track="@drawable/switch_track_selector" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Lin_v4_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edittext14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/edittext_rounded_corner_rectangle"
+                            android:text="edit1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <SeekBar
+                                android:id="@+id/seekBar14"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:indeterminate="false"
+
+
+                                android:max="100"
+                                android:mirrorForRtl="false"
+                                android:progressDrawable="@drawable/seekbar_seekbar1"
+                                android:thumb="@drawable/seekbar_seekbar2_thumb" />
+
+                            <TextView
+                                android:id="@+id/seek_level14"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Switch
+                                android:id="@+id/switch14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:switchMinWidth="75dp"
+                                android:thumb="@drawable/switch_thumb_selector"
+                                android:track="@drawable/switch_track_selector" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Lin_v4_15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edittext15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/edittext_rounded_corner_rectangle"
+                            android:text="edit1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <SeekBar
+                                android:id="@+id/seekBar15"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:indeterminate="false"
+
+
+                                android:max="100"
+                                android:mirrorForRtl="false"
+                                android:progressDrawable="@drawable/seekbar_seekbar1"
+                                android:thumb="@drawable/seekbar_seekbar2_thumb" />
+
+                            <TextView
+                                android:id="@+id/seek_level15"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Switch
+                                android:id="@+id/switch15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:switchMinWidth="75dp"
+                                android:thumb="@drawable/switch_thumb_selector"
+                                android:track="@drawable/switch_track_selector" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Lin_v4_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edittext16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/edittext_rounded_corner_rectangle"
+                            android:text="edit1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <SeekBar
+                                android:id="@+id/seekBar16"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:indeterminate="false"
+
+
+                                android:max="100"
+                                android:mirrorForRtl="false"
+                                android:progressDrawable="@drawable/seekbar_seekbar1"
+                                android:thumb="@drawable/seekbar_seekbar2_thumb" />
+
+                            <TextView
+                                android:id="@+id/seek_level16"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Switch
+                                android:id="@+id/switch16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:switchMinWidth="75dp"
+                                android:thumb="@drawable/switch_thumb_selector"
+                                android:track="@drawable/switch_track_selector" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

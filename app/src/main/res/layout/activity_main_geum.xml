@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gra2"
+    >
+
+    <TextView
+        android:id="@+id/text_copy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copy Right MRBAS Co., Ltd. since 2020 year"
+        android:textColor="#DBDCDC"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="193dp"
+        android:layout_height="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_copy2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="340dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="141dp">
+
+        <Button
+            android:id="@+id/ts4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/img_igsts4"
+            android:freezesText="true"
+            android:onClick="on_ts4"
+            android:text="IGS-TS-4"
+            android:textAlignment="viewEnd" />
+
+        <Button
+            android:id="@+id/ts8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/img_igts8"
+            android:onClick="on_ts8"
+            android:text="IGS-TS-8" />
+
+        <Button
+            android:id="@+id/sts"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/img_sts"
+            android:onClick="on_sts"
+            android:text="STS-L2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textmemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TAP '+' to add Device"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+</android.support.constraint.ConstraintLayout>
