@@ -103,6 +103,7 @@ public class sts_main2 extends AppCompatActivity implements RadioGroup.OnChecked
     SeekBar seekbar1;
     TextView tv1, tv2, tv3, tv4;
     ImageView img;
+    int dianum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -1995,42 +1996,64 @@ String dan= " %";
             final int[] selectedItem = {0};
             final    AlertDialog.Builder builder = new AlertDialog.Builder(sts_main2.this);
 
-            builder.setTitle("골라");
+            builder.setTitle("장소를 선택하세요");
             builder.setSingleChoiceItems(items, 0, new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    selectedItem[0] = which;
-
-
-                }
-            }).setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 @RequiresApi(api = Build.VERSION_CODES.M)
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-//              Ty_m.setBackground(getDrawable(R.drawable.m_off_01));
-                    if(which == 0){img.setForeground(getDrawable(R.drawable.office));}
-                    else if(which == 1){img.setForeground(getDrawable(R.drawable.office));}
-                    else if(which == 2){img.setForeground(getDrawable(R.drawable.office));}
-                    else if(which == 3){img.setForeground(getDrawable(R.drawable.office));}
-                    else if(which == 4){img.setForeground(getDrawable(R.drawable.office));}
-                    else if(which == 5){img.setForeground(getDrawable(R.drawable.office));}
+                    selectedItem[0] = which;
+                    dianum = which;
 
-                }
-            }).setNegativeButton("NO", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
 
                 }
             });
 
+            builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 
+
+                        @RequiresApi(api = Build.VERSION_CODES.M) //버전이 맞지 않는 명령을 사용하기위해 선언
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+
+
+                            if(dianum==0){
+                                img.setForeground(getDrawable(R.drawable.office));
+                                Log.e("이미지0:", "" + which);
+                            }else if(dianum==1){           img.setForeground(getDrawable(R.drawable.living));
+
+                            }else if(dianum==2){         img.setForeground(getDrawable(R.drawable.cris));
+
+                            }else if(dianum==3){         img.setForeground(getDrawable(R.drawable.home));
+
+                            }else if(dianum==4){        img.setForeground(getDrawable(R.drawable.market));
+
+                            }else if(dianum==5){      img.setForeground(getDrawable(R.drawable.meeting));
+
+                            }
+
+
+
+
+
+                        }});
+
+            builder.setNegativeButton("NO",new DialogInterface.OnClickListener()
+
+                        {
+                            @Override
+                            public void onClick (DialogInterface dialog,int which){
+                            dialog.dismiss();
+                        }
+                        }    );
 
             builder.create();
             builder.show();
-
-
             return true;
-        }
+                    }
+
+
+
+
 
 
         //구분
