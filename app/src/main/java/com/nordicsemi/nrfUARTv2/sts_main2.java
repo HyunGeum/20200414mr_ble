@@ -2009,7 +2009,7 @@ String dan= " %";
                 public void onClick(DialogInterface dialog, int which) {
 //              Ty_m.setBackground(getDrawable(R.drawable.m_off_01));
                     if(which == 0){img.setForeground(getDrawable(R.drawable.office));}
-                    else if(which == 1){img.setForeground(getDrawable(R.drawable.));}
+                    else if(which == 1){img.setForeground(getDrawable(R.drawable.office));}
                     else if(which == 2){img.setForeground(getDrawable(R.drawable.office));}
                     else if(which == 3){img.setForeground(getDrawable(R.drawable.office));}
                     else if(which == 4){img.setForeground(getDrawable(R.drawable.office));}
