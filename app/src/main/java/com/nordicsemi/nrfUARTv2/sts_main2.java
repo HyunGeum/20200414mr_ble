@@ -45,7 +45,9 @@ package com.nordicsemi.nrfUARTv2;
         import android.widget.Toast;
 
         import java.text.DateFormat;
+        import java.util.ArrayList;
         import java.util.Date;
+        import java.util.List;
         import java.util.Timer;
         import java.util.TimerTask;
 
@@ -1988,41 +1990,43 @@ String dan= " %";
         }
 
         if (id == R.id.pic_change) {
-
+            final List<String> list = new ArrayList<>();
+            final String[] items = new String[]{"사무실","거실","교회","가정집","마켓", "회의실"};
+            final int[] selectedItem = {0};
             final    AlertDialog.Builder builder = new AlertDialog.Builder(sts_main2.this);
-            final EditText edittext = new EditText(sts_main2.this);
-            final String aaa;
-            final LayoutInflater factory = LayoutInflater.from(sts_main2.this);
-            final Context mContext = getApplicationContext();
-            final View view  = factory.inflate(R.layout.dialog_pic,null);
+
+            builder.setTitle("골라");
+            builder.setSingleChoiceItems(items, 0, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    selectedItem[0] = which;
 
 
-
-
-
-            builder.setView(view);
-
-            builder.setNeutralButton("Here!", new DialogInterface.OnClickListener() {
-
+                }
+            }).setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 @RequiresApi(api = Build.VERSION_CODES.M)
-                public void onClick(DialogInterface dlg, int sumthin){
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+//              Ty_m.setBackground(getDrawable(R.drawable.m_off_01));
+                    if(which == 0){img.setForeground(getDrawable(R.drawable.office));}
+                    else if(which == 1){img.setForeground(getDrawable(R.drawable.));}
+                    else if(which == 2){img.setForeground(getDrawable(R.drawable.office));}
+                    else if(which == 3){img.setForeground(getDrawable(R.drawable.office));}
+                    else if(which == 4){img.setForeground(getDrawable(R.drawable.office));}
+                    else if(which == 5){img.setForeground(getDrawable(R.drawable.office));}
 
-                   // img.setForeground(R.drawable.s_off_01);
-                    img.setForeground(getDrawable(R.drawable.img_igsts4));
-
-                   // Ty_s.setBackground(getDrawable(R.drawable.s_off_01));
+                }
+            }).setNegativeButton("NO", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
 
                 }
             });
+
+
+
+            builder.create();
             builder.show();
-
-
-
-
-
-
-
-
 
 
             return true;
