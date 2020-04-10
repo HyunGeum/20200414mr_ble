@@ -16,9 +16,11 @@ package com.nordicsemi.nrfUARTv2;
         import android.graphics.Color;
         import android.graphics.Typeface;
         import android.graphics.drawable.ColorDrawable;
+        import android.os.Build;
         import android.os.Handler;
         import android.os.IBinder;
         import android.os.Message;
+        import android.support.annotation.RequiresApi;
         import android.support.v4.content.LocalBroadcastManager;
         import android.support.v7.app.ActionBar;
         import android.support.v7.app.AppCompatActivity;
@@ -33,6 +35,7 @@ package com.nordicsemi.nrfUARTv2;
         import android.widget.Button;
         import android.widget.CompoundButton;
         import android.widget.EditText;
+        import android.widget.ImageView;
         import android.widget.LinearLayout;
         import android.widget.ListView;
         import android.widget.RadioGroup;
@@ -97,6 +100,7 @@ public class sts_main2 extends AppCompatActivity implements RadioGroup.OnChecked
     TextView bt1_value, bt2_value, bt3_value, bt4_value, bt5_value, bt6_value, bt7_value, bt8_value, bt9_value, bt10_value, bt11_value, bt12_value, bt13_value, bt14_value, bt15_value, bt16_value, bt17_value, bt18_value;
     SeekBar seekbar1;
     TextView tv1, tv2, tv3, tv4;
+    ImageView img;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -136,7 +140,7 @@ public class sts_main2 extends AppCompatActivity implements RadioGroup.OnChecked
             return;
         }
 
-
+        img = findViewById(R.id.imageView);
         messageListView = (ListView) findViewById(R.id.listMessage);
         listAdapter = new ArrayAdapter<String>(this, R.layout.message_detail);
         messageListView.setAdapter(listAdapter);
@@ -1988,17 +1992,30 @@ String dan= " %";
             final    AlertDialog.Builder builder = new AlertDialog.Builder(sts_main2.this);
             final EditText edittext = new EditText(sts_main2.this);
             final String aaa;
+            final LayoutInflater factory = LayoutInflater.from(sts_main2.this);
             final Context mContext = getApplicationContext();
+            final View view  = factory.inflate(R.layout.dialog_pic,null);
 
 
 
-            builder.setTitle("사진 변경").setView(edittext);
 
 
+            builder.setView(view);
 
-         //   builder.setMessage("변경할 버튼 이름을 입력하세요");//세팅해서
+            builder.setNeutralButton("Here!", new DialogInterface.OnClickListener() {
 
-            builder.create();//만들고
+                @RequiresApi(api = Build.VERSION_CODES.M)
+                public void onClick(DialogInterface dlg, int sumthin){
+
+                   // img.setForeground(R.drawable.s_off_01);
+                    img.setForeground(getDrawable(R.drawable.img_igsts4));
+
+                   // Ty_s.setBackground(getDrawable(R.drawable.s_off_01));
+
+                }
+            });
+            builder.show();
+
 
 
 

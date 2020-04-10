@@ -41,8 +41,7 @@
             android:layout_height="150dp"
 
             android:background="#FFFFFF"
-            android:foreground="@drawable/office"
-            app:srcCompat="@mipmap/ic_launcher" />
+            android:foreground="@drawable/office" />
 
         <LinearLayout
             android:layout_width="match_parent"
