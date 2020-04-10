@@ -25,6 +25,7 @@ package com.nordicsemi.nrfUARTv2;
         import android.os.Bundle;
         import android.util.Log;
         import android.view.Display;
+        import android.view.LayoutInflater;
         import android.view.Menu;
         import android.view.MenuItem;
         import android.view.View;
@@ -1986,6 +1987,8 @@ String dan= " %";
             final    AlertDialog.Builder builder = new AlertDialog.Builder(sts_main2.this);
             final EditText edittext = new EditText(sts_main2.this);
             final String aaa;
+            final Context mContext = getApplicationContext();
+
 
 
             builder.setTitle("사진 변경").setView(edittext);
