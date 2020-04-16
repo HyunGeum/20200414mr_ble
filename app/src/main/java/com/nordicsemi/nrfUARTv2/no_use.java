@@ -15,7 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class no_use extends AppCompatActivity {
+public class no_use  extends Activity{
     Switch aSwitch1, aSwitch2, aSwitch3, aSwitch4, aSwitch5, aSwitch6, aSwitch7, aSwitch8;
     double te, hu, co, tv;
     TextView text_temp, text_humi, text_co2, text_tvoc;
