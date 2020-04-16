@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class rlcm {
+public class rlcm extends AppCompatActivity{
     private String TAG = "rlcm";
     @Override
     protected void onCreate(Bundle savedInstanceState) {

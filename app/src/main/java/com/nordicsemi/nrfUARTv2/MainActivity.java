@@ -9,7 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity  extends Activity {
+public class MainActivity  extends AppCompatActivity {
     private String TAG = "MainActivity";
     Button ts4, ts8, sts;
     @Override
