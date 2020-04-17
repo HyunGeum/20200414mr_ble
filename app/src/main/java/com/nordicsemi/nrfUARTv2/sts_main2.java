@@ -1960,7 +1960,15 @@ public class sts_main2 extends AppCompatActivity implements RadioGroup.OnChecked
             return true;
         }
 
+        if (id == R.id.trend) {
 
+            Intent intent = new Intent(this, trend.class);
+            startActivity(intent);
+            finish();
+
+
+
+        }
         //구분
 
         return super.onOptionsItemSelected(item);

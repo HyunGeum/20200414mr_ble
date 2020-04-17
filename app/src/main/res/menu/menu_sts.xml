@@ -11,11 +11,6 @@
     android:title="Connect"
 />
 
-    <item
-        android:id="@+id/device_scan"
-        android:orderInCategory="100"
-        android:title="삭제"
-        app:showAsAction="never" />
     <item android:title="스위치 이름 변경"
         android:id="@+id/sw_name_change"
         />
@@ -25,13 +20,9 @@
     <item android:title="사진 변경"
         android:id="@+id/pic_change"
         />
+    <item
+        android:id="@+id/trend"
+        android:title="에너지 사용량" />
 
 
-    <item android:title="설정" />
-    <item android:title="에너지 사용량" />
-    <item android:title="스케쥴 등록" />
-    <item android:title="센서 등록" />
-    <item android:title="위젯 등록" />
-    <item android:title="테스트(데이터넣기)" />
-    <item android:title="테스트(데이터삭제)" />
 </menu>
