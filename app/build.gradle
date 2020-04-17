@@ -24,11 +24,11 @@ dependencies {
     implementation 'com.android.support:design:26.1.0'
     implementation 'com.android.support:support-annotations:26.1.0'
     implementation 'android.arch.lifecycle:extensions:1.1.1'
-    implementation 'com.h6ah4i.android.widget.verticalseekbar:verticalseekbar:0.7.2'
-    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+    implementation 'com.h6ah4i.android.widget.verticalseekbar:verticalseekbar:0.7.2'//세로 시크바 라이브러리
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.1'//그래프 라이브러리
 }
 repositories {
     maven {
-        url "https://jitpack.io"
+        url "https://jitpack.io" //그래프 라이브러리
     }
 }
