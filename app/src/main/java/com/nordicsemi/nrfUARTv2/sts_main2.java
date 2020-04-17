@@ -1964,7 +1964,7 @@ public class sts_main2 extends AppCompatActivity implements RadioGroup.OnChecked
 
             Intent intent = new Intent(this, trend.class);
             startActivity(intent);
-            finish();
+
 
 
 
