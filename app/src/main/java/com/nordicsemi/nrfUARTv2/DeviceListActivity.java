@@ -308,10 +308,10 @@ public class DeviceListActivity extends Activity {
              //  Log.e(TAG,"RSSI"+rssival);
 
             }
-            if (rssival > -65){tvrssi.setBackground(getDrawable(R.drawable.lv4));}
-            else if (rssival > -75){tvrssi.setBackground(getDrawable(R.drawable.lv3));}
-            else if (rssival > -85){tvrssi.setBackground(getDrawable(R.drawable.lv2));}
-            else {tvrssi.setBackground(getDrawable(R.drawable.lv1));}
+            if (rssival > -65){tvrssi.setBackground(getDrawable(R.drawable.lv1));}
+            else if (rssival > -75){tvrssi.setBackground(getDrawable(R.drawable.lv2));}
+            else if (rssival > -85){tvrssi.setBackground(getDrawable(R.drawable.lv3));}
+            else {tvrssi.setBackground(getDrawable(R.drawable.lv4));}
 
 
 
